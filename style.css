@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #de2828;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    padding: 2rem;
+    gap: 2rem;
+}
+.container{
+    background: white;
+    border-radius: 50px;
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    justify-content:flex-start; 
+    padding: 3rem;
+    align-items: center;
+    flex-direction: column;
+
+}
+.main{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input{
+    padding:1rem;
+    height: 3rem;
+    width: 90%;
+    margin: 2rem;
+
+}
+
+.search{
+    padding: 10px;
+    border: black 1px solid;
+    transition: all ease-in-out 0.1s;
+    width: 90%;
+    height: 7vh;
+}
+.search:hover{
+    background: black;
+    color: white;
+    border: white 1px solid;
+
+}
+.show{
+    height: 90vh;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.searching{
+    height: 30vh;
+    width: 30vw;
+    padding: 10px;
+;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px solid;
+    border-color: #000 #0000;
+    animation: l1 1s infinite;
+  }
+  @keyframes l1 {to{transform: rotate(.5turn)}}
+
+  .card{
+    border: black 2px solid;
+    background: white;
+    height:75%;
+    width: 45%;
+    backdrop-filter: blur(5);
+  }
+  .name{
+    border-bottom: 2px black solid;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:12px;
+ 
+
+  }
+  .image{
+    border-bottom: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    width: 100%;
+
+  }
+  .type{
+    border-bottom: 2px black solid;
+    height: 10vh;
+    width: 100%;
+ 
+  }
+  .description{
+    border-bottom: 2px black solid;
+    height: 15vh;
+    width: 100%;
+    
+  }
