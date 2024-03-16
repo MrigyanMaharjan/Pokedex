@@ -90,6 +90,7 @@ body{
     backdrop-filter: blur(5);
   }
   .name{
+    text-align: center;
     border-bottom: 2px black solid;
     height: 6vh;
     width: 100%;
@@ -101,6 +102,7 @@ body{
 
   }
   .image{
+    text-align: center;
     border-bottom: 2px black solid;
     display: flex;
     align-items: center;
@@ -110,14 +112,47 @@ body{
 
   }
   .type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-bottom: 2px black solid;
     height: 10vh;
     width: 100%;
  
   }
   .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-bottom: 2px black solid;
     height: 15vh;
     width: 100%;
     
   }
+@media screen and (max-width:763px){
+  
+ 
+  body{
+    height: 100vh;
+    width: 100vw;
+    background: #de2828;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+.container{
+  width: 95vw;
+}
+.show{
+  width: 95vw;
+ min-height: 85vh;
+}
+.card{
+  width:90%;
+}
+}
